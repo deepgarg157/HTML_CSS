@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            border-radius: 100px;
+            color: white;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .items {
+            margin: 10px;
+            padding: 10px;
+            font-size: 15px;
+
+        }
+
+        .items a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .items a:hover {
+            color: red;
+        }
+
+        .searchbar {
+            border: 3px solid yellow;
+            width: 169px;
+            height: 22px;
+            border-radius: 5px;
+            margin: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items" id="items-1"><a href="">First Box</a></div>
+        <div class="items" id="items-2"><a href="">Second Box</a></div>
+        <div class="items" id="items-3"><a href="">Third Box</a></div>
+        <div class="items" id="items-4"><a href="">Fourth Box</a></div>
+        <div class="items" id="items-5"><a href="">Fifth Box</a></div>
+        <div class="items" id="items-6"><a href="">Sixth Box</a></div>
+        <div class="searchbar">
+            <input type="text" name="search" id="search" placeholder="Search Websites Here">
+        </div>
+    </div>
+</body>
+
+</html>

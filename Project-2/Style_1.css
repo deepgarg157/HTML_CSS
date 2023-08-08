@@ -1,0 +1,199 @@
+/* CSS reset */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* logo style */
+#logo img {
+    width: 150px;
+    height: 100px;
+    padding: 12px 34px;
+}
+
+/* navbar */
+#navbar {
+    display: flex;
+}
+
+#navbar ul {
+    display: flex;
+    padding: 0px;
+    margin: -30px 55px;
+}
+
+#navbar li {
+    padding: 10px;
+    margin: 63px;
+}
+
+#navbar ul li{
+    list-style: none;
+}
+
+#navbar ul li a{
+    text-decoration: none ;
+    font-size: 1.6rem;
+    color: rgb(36, 7, 62);
+}
+
+#navbar ul li a:hover{
+    background-color: rgb(162, 233, 162);
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.1;
+    top: 0px;
+    left: 0px;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 120px;
+    height: 500px;
+}
+
+#home::before {
+    content: "";
+    background: url(food2.png) no-repeat center center/cover;
+    position: absolute;
+    height: 1817px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    font-size: 3.2rem;
+}
+
+#home p{
+    font-size: 1.2rem;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid red;
+    background-color: black;
+    color: white;
+    margin: 17px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+   border: 2px solid brown;
+   padding: 10px 10px;
+   margin: 3px 6px;
+   border-radius: 6px;
+   background-color: rgb(247, 235, 235);
+} 
+
+#services .box img{
+    height: 200px;
+    display: block;
+    margin: auto;
+ }
+
+ #services .box p{
+    font-family: 'Lobster', cursive;
+ }
+
+ .center{
+    text-align: center;
+}
+
+.h-primary {
+    font-size: 3.8rem;
+    padding: 5px;
+}
+
+.h-secondary {
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Lobster', cursive;
+}
+
+/* Clients section */
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+  height: 124px;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#client-section::before{
+content: "";
+position: absolute;
+background: url(food2.png) no-repeat center center/cover;
+width: 100%;
+height: 30%;
+z-index: -1;
+opacity: 0.4;
+}
+
+/* contact section */
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+   content: "";
+   position: absolute;
+   background: url();
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity: 0.4;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+
+#contact-box label{
+   font-size: 1.2rem;
+   font-family: 'Lobster', cursive;
+}

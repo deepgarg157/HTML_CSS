@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepanshu Fitness</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('./gym.jpg.jpg');
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 20px;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .left img {
+            width: 120px;
+            text-align: center;
+            filter: invert(100%);
+        }
+
+        .mid {
+            /* border: 2px solid rgb(79, 133, 3); */
+            display: block;
+            width: 1000px;
+            margin: 12px auto;
+
+        }
+
+        .right {
+            /* border: 2px solid yellow; */
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 20px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+            padding: 33px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: red;
+            text-decoration: underline;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 4px 14px;
+            border: 2px solid gray;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: 'Ubuntu', sans-serif;
+
+        }
+
+        .btn:hover {
+            background-color: rgb(45, 43, 43);
+        }
+
+        .container {
+            /* border: 2px solid #f5efef; */
+            margin: 110px 624px;
+            padding: 75px 2px;
+            width: 33%;
+            border-radius: 20px;
+        }
+
+        .form-group input {
+            font-size: 15px;
+            text-align: center;
+            display: block;
+            width: 68%;
+            margin: 5px auto;
+            padding: 4px 2px;
+            border: 4px solid gray;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+        }
+
+        .container button {
+            display: block;
+            width: 23%;
+            margin: auto;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="Gym1.png" alt="">
+            <div>
+                Deepanshu Fitness
+            </div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Fitness Calculator</a></li>
+                <li><a href="">Contact US</a></li>
+            </ul>
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the Best Gym of Noida Now</h1>
+        <form action="noaction.php" method="get">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="age" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
